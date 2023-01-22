@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="star" class="com.cons.prop.inter.College">
+		<property name="std1" ref="student1"></property>
+		<property name="std2" ref="student2"></property>
+		<property name="std3" ref="student3"></property>
+		
+	</bean>
+	
+	
+	<bean id="student1" class="com.cons.prop.inter.Student">
+		<property name="id" value="202301"></property>
+		<property name="name" value="Gautham"></property>
+		<property name="marks" value="100"></property>
+	</bean>
+	
+	<bean id="student2" class="com.cons.prop.inter.Student">
+		<property name="id" value="202302"></property>
+		<property name="name" value="Ravi"></property>
+		<property name="marks" value="100"></property>
+	</bean>
+	
+	<bean id="student3" class="com.cons.prop.inter.Student">
+		<property name="id" value="202303"></property>
+		<property name="name" value="Tharun"></property>
+		<property name="marks" value="100"></property>
+	</bean>
+	
+</beans>
